@@ -87,6 +87,37 @@ input, select, textarea {
 			min-width: 320px;
 		}
 
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr {
+			display: block;
+		}
+
+
+	    tr {
+	      margin: 0 0 1rem 0;
+	    }
+	      
+	    tr:nth-child(odd) {
+	    }
+	    
+			td {
+				/* Behave  like a "row" */
+				border: none;
+				position: relative;
+				padding-left: 50%;
+			}
+
+			td:before {
+				/* Now like a table header */
+				position: absolute;
+				/* Top/left values mimic padding */
+				top: 0;
+				left: 6px;
+				width: 45%;
+				padding-right: 10px;
+				white-space: nowrap;
+			}
+
 	}
 
 	html {
@@ -3186,6 +3217,8 @@ input, select, textarea {
 				border-top: 0;
 			}
 
+
+
 /* Wrapper */
 
 	.wrapper {
@@ -3891,3 +3924,4 @@ input, select, textarea {
 			}
 
 		}
+
