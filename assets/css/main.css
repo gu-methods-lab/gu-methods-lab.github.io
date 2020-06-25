@@ -87,7 +87,8 @@ input, select, textarea {
 			min-width: 320px;
 		}
 
-		/* Force table to not be like tables anymore */
+		/* Force table to not be like tables anymore on mobile devices*/
+		/* Edited by SR 6/25/2020 */
 		table, thead, tbody, th, td, tr {
 			display: block;
 		}
@@ -117,8 +118,7 @@ input, select, textarea {
 				padding-right: 10px;
 				white-space: nowrap;
 			}
-
-	}
+		/* Force table to not be like tables anymore on mobile devices*/
 
 	html {
 		box-sizing: border-box;
