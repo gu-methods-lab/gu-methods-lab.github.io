@@ -119,6 +119,8 @@ input, select, textarea {
 				white-space: nowrap;
 			}
 		/* Force table to not be like tables anymore on mobile devices*/
+	}
+		
 
 	html {
 		box-sizing: border-box;
